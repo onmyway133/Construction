@@ -14,6 +14,8 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 - Use @noescape to make sure parameter can not outlive the method call
 - Does not work well on struct, unless we use `mutating`
+- `Configurable` conformance was declared for NSObject
+- `Initable` conformance must be explictly declared
 
 ## Features
 
@@ -59,11 +61,11 @@ Works on classes that have `init()`
 ```swift
 extension UILabel: Initable {}
 
-  let label = UILabel {
-      $0.text = "Fantageek"
-  }
+let label = UILabel {
+    $0.text = "Fantageek"
+}
 
-  XCTAssert(label.text == "Fantageek")
+XCTAssert(label.text == "Fantageek")
 ```
 
 Works on custom classes

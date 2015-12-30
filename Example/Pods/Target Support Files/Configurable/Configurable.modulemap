@@ -1,0 +1,6 @@
+framework module Configurable {
+  umbrella header "Configurable-umbrella.h"
+
+  export *
+  module * { export * }
+}

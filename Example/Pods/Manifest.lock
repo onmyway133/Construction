@@ -1,0 +1,14 @@
+PODS:
+  - Configurable (0.1.0)
+
+DEPENDENCIES:
+  - Configurable (from `../`)
+
+EXTERNAL SOURCES:
+  Configurable:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Configurable: 814eebb1f936c0d676d8cd4bf1a072c8b680180b
+
+COCOAPODS: 0.39.0

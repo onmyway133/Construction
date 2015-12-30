@@ -45,6 +45,8 @@ class Person {
     }
 }
 
+extension Person: Configurable {}
+
 let person = Person().configure {
     $0.name = "Luke Skywalker"
     $0.age = 17

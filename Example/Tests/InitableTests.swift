@@ -12,12 +12,20 @@ import Configurable
 
 extension UILabel: Initable {}
 
-final class Robot {
+// 2 ways
+// - Make it final
+// - Implement init
+class Robot {
     var name: String?
     var cute = false
+
+    required init() {
+
+    }
 }
 
-extension Robot: Initable { }
+extension Robot: Initable {
+}
 
 class InitableTests: XCTestCase {
     func testClassWithExistingInit() {

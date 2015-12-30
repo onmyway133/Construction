@@ -14,6 +14,7 @@
 		750191DDDD2493F2EFBEA1EDB1D95B56 /* Configurable-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 264C3F5FE8534C02B838E5E0FDD631CB /* Configurable-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C5C73CE25A3F981F52E7D03CC30DC03A /* Configurable-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CB1D065AA178FE602C0BCA614C6AA581 /* Configurable-dummy.m */; };
 		D2C08BA71C33837400BBA5DA /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C08BA61C33837400BBA5DA /* Configurable.swift */; };
+		D2C08BA91C3388F800BBA5DA /* Initable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C08BA81C3388F800BBA5DA /* Initable.swift */; };
 		D36E080D318BACA4E72DA0D7B52FE8DE /* Configurable.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D918A10AF94F00BF1985A8648C24835A /* Configurable.bundle */; };
 		EFDD0F9CA26C5A12D32A5B9E7E04DC76 /* Pods-Configurable_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D66D34201D277C7AB52A2767F2E76FA0 /* Pods-Configurable_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F67BA9E3FAB6A3B45246674C60222684 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
@@ -70,6 +71,7 @@
 		CB1D065AA178FE602C0BCA614C6AA581 /* Configurable-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Configurable-dummy.m"; sourceTree = "<group>"; };
 		CBDC78C3EC3771BBD7ED111983C24E22 /* Pods-Configurable_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Configurable_Example-resources.sh"; sourceTree = "<group>"; };
 		D2C08BA61C33837400BBA5DA /* Configurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configurable.swift; sourceTree = "<group>"; };
+		D2C08BA81C3388F800BBA5DA /* Initable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Initable.swift; sourceTree = "<group>"; };
 		D566BF2C55E177C532349F7412FDC5E2 /* Pods-Configurable_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Configurable_Tests-dummy.m"; sourceTree = "<group>"; };
 		D5DB0147DB45ACFCFAE73C62EDE7C21C /* Pods-Configurable_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Configurable_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D66D34201D277C7AB52A2767F2E76FA0 /* Pods-Configurable_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Configurable_Tests-umbrella.h"; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				D2C08BA61C33837400BBA5DA /* Configurable.swift */,
+				D2C08BA81C3388F800BBA5DA /* Initable.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -401,6 +404,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2C08BA91C3388F800BBA5DA /* Initable.swift in Sources */,
 				D2C08BA71C33837400BBA5DA /* Configurable.swift in Sources */,
 				C5C73CE25A3F981F52E7D03CC30DC03A /* Configurable-dummy.m in Sources */,
 			);

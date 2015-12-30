@@ -15,6 +15,8 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		B9CBBC2019F2DA7D416D1360 /* Pods_Configurable_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5452EF97334516EB46263C5 /* Pods_Configurable_Tests.framework */; };
+		D2C08BAB1C338B9200BBA5DA /* ConfigurableTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C08BAA1C338B9200BBA5DA /* ConfigurableTest.swift */; };
+		D2C08BAD1C338B9B00BBA5DA /* InitableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C08BAC1C338B9B00BBA5DA /* InitableTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,8 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		679122BACA1AFFB7CC14CE26 /* Pods-Configurable_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Configurable_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Configurable_Tests/Pods-Configurable_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		740EA53FC33F0A871E1012B7 /* Pods-Configurable_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Configurable_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Configurable_Example/Pods-Configurable_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		D2C08BAA1C338B9200BBA5DA /* ConfigurableTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurableTest.swift; sourceTree = "<group>"; };
+		D2C08BAC1C338B9B00BBA5DA /* InitableTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitableTests.swift; sourceTree = "<group>"; };
 		D951D8E7F23C389D97CB3D22 /* Pods-Configurable_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Configurable_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Configurable_Example/Pods-Configurable_Example.release.xcconfig"; sourceTree = "<group>"; };
 		EC5EEA96683ECA27F47234FE /* Configurable.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Configurable.podspec; path = ../Configurable.podspec; sourceTree = "<group>"; };
 		F2213D64ABFFDEA7680A024D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -137,6 +141,8 @@
 			children = (
 				607FACEB1AFB9204008FA782 /* Tests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
+				D2C08BAA1C338B9200BBA5DA /* ConfigurableTest.swift */,
+				D2C08BAC1C338B9B00BBA5DA /* InitableTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -368,7 +374,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2C08BAB1C338B9200BBA5DA /* ConfigurableTest.swift in Sources */,
 				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				D2C08BAD1C338B9B00BBA5DA /* InitableTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

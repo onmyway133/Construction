@@ -41,5 +41,14 @@ class ConfigurableTests: XCTestCase {
         XCTAssert(person.name! == "Luke Skywalker")
         XCTAssert(person.age! == 17)
     }
-    
+
+    func testFreeFunction() {
+        let person = build(Person()) {
+            $0.name = "Luke Skywalker"
+            $0.age = 17
+        }
+
+        XCTAssert(person.name! == "Luke Skywalker")
+        XCTAssert(person.age! == 17)
+    }
 }

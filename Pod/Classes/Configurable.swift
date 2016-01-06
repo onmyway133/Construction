@@ -8,6 +8,7 @@
 
 import Foundation
 
+// MARK: Configurable
 public protocol Configurable { }
 
 public extension Configurable {
@@ -19,3 +20,8 @@ public extension Configurable {
 
 extension NSObject: Configurable { }
 
+// MARK: Free Function
+public func build<T>(value: T, @noescape block: T -> Void) -> T {
+    block(value)
+    return value
+}

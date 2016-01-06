@@ -19,6 +19,20 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Features
 
+### Build
+
+Works on any mutable value
+
+```swift
+let person = build(Person()) {
+    $0.name = "Luke Skywalker"
+    $0.age = 17
+}
+
+XCTAssert(person.name! == "Luke Skywalker")
+XCTAssert(person.age! == 17)
+```
+
 ### Configurable
 
 Works on NSObject subclasses
@@ -118,6 +132,11 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "Configurable"
 ```
+
+## Credit
+Credit goes to
+
+- [Easier Configuration](http://nshipster.com/new-years-2016/)
 
 ## Author
 

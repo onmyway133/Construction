@@ -20,7 +20,7 @@ public protocol Initable {
 // MARK: - Construct
 
 /**
- Init a struct and configure it
+ Construct a struct and configure it
 */
 public func construct<T: Initable>(@noescape block: inout T -> Void) -> T {
   var entity = T()
@@ -32,11 +32,19 @@ public func construct<T: Initable>(@noescape block: inout T -> Void) -> T {
 // MARK: - Build
 
 /**
- Configure existing struct
+ Build an existing struct
 */
 public func build<T>(inout entity: T, @noescape block: inout T -> Void) -> T {
   block(&entity)
   return entity
+}
+
+/**
+ Build an existing object
+ */
+public func build<T>(object: T, @noescape block: T -> Void) -> T {
+  block(object)
+  return object
 }
 
 // MARK: - Configurable

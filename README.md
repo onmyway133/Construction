@@ -1,6 +1,6 @@
 # Construction
 
-The many ways to construct and configure your entity
+The many ways to construct and configure your entity. Work for struct and class
 
 [![CI Status](http://img.shields.io/travis/onmyway133/Construction.svg?style=flat)](https://travis-ci.org/onmyway133/Construction)
 [![Version](https://img.shields.io/cocoapods/v/Construction.svg?style=flat)](http://cocoadocs.org/docsets/Construction)
@@ -13,8 +13,7 @@ The many ways to construct and configure your entity
 ### construct
 
 - Free function
-- Init an entity and configure it
-- Work for struct only
+- Construct a struct and configure it
 
 `Person`
 ```swift
@@ -45,8 +44,7 @@ XCTAssertNil(person.website)
 ### build
 
 - Free function
-- Configure existing entity
-- Work for struct only
+- Build an existing struct
 
 ```swift
 var person = Person() // Declare as `var`
@@ -60,11 +58,7 @@ XCTAssertEqual(person.age, 17)
 XCTAssertNil(person.website)
 ```
 
-### configure
-
-- Member function
-- Configure existing entity
-- Work for class only
+- Build an existing object
 
 `Car`
 ```swift
@@ -75,6 +69,21 @@ class Car {
 
 extension Car: Configurable {}
 ```
+
+```swift
+let car = build(Car()) {
+  $0.model = "Tesla Model 3"
+  $0.price = 35_000
+}
+
+XCTAssertEqual(car.model, "Tesla Model 3")
+XCTAssertEqual(car.price, 35_000)
+```
+
+### configure
+
+- Member function
+- Configure existing object
 
 ```swift
 let car = Car().configure {

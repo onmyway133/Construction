@@ -41,7 +41,7 @@ public class Tests: XCTestCase {
     XCTAssertNil(person.website)
   }
 
-  func testBuild() {
+  func testBuildStruct() {
     var person = Person()
     build(&person) {
       $0.name = "Luffy"
@@ -51,6 +51,16 @@ public class Tests: XCTestCase {
     XCTAssertEqual(person.name, "Luffy")
     XCTAssertEqual(person.age, 17)
     XCTAssertNil(person.website)
+  }
+
+  func testBuildObject() {
+    let car = build(Car()) {
+      $0.model = "Tesla Model 3"
+      $0.price = 35_000
+    }
+
+    XCTAssertEqual(car.model, "Tesla Model 3")
+    XCTAssertEqual(car.price, 35_000)
   }
 
   func testConfigurable() {

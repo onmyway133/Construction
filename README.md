@@ -1,6 +1,6 @@
 # Construction
 
-The many ways to construct and configure your entity, work for struct and class
+The many ways to construct and configure your entity
 
 [![CI Status](http://img.shields.io/travis/onmyway133/Construction.svg?style=flat)](https://travis-ci.org/onmyway133/Construction)
 [![Version](https://img.shields.io/cocoapods/v/Construction.svg?style=flat)](http://cocoadocs.org/docsets/Construction)

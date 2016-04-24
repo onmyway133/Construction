@@ -1,6 +1,6 @@
 # Construction
 
-The many ways to build and configure your entity
+The many ways to construct and configure your entity, work for struct and class
 
 [![CI Status](http://img.shields.io/travis/onmyway133/Construction.svg?style=flat)](https://travis-ci.org/onmyway133/Construction)
 [![Version](https://img.shields.io/cocoapods/v/Construction.svg?style=flat)](http://cocoadocs.org/docsets/Construction)
@@ -8,12 +8,82 @@ The many ways to build and configure your entity
 [![License](https://img.shields.io/cocoapods/l/Construction.svg?style=flat)](http://cocoadocs.org/docsets/Construction)
 [![Platform](https://img.shields.io/cocoapods/p/Construction.svg?style=flat)](http://cocoadocs.org/docsets/Construction)
 
-## Description
-
 ## Usage
 
+### construct
+
+- Free function
+- Init an entity and configure it
+- Work for struct only
+
+`Person`
 ```swift
-<API>
+struct Person {
+  var name: String = ""
+  var age: Int = 0
+  var website: NSURL?
+
+  init() {
+
+  }
+}
+
+extension Person: Initable {}
+```
+
+```swift
+let person: Person = construct {
+  $0.name = "Luffy"
+  $0.age = 17
+}
+
+XCTAssertEqual(person.name, "Luffy")
+XCTAssertEqual(person.age, 17)
+XCTAssertNil(person.website)
+```
+
+### build
+
+- Free function
+- Configure existing entity
+- Work for struct only
+
+```swift
+var person = Person() // Declare as `var`
+build(&person) {      // Use `&`
+  $0.name = "Luffy"
+  $0.age = 17
+}
+
+XCTAssertEqual(person.name, "Luffy")
+XCTAssertEqual(person.age, 17)
+XCTAssertNil(person.website)
+```
+
+### configure
+
+- Member function
+- Configure existing entity
+- Work for class only
+
+`Car`
+```swift
+class Car {
+  var model: String = ""
+  var price: Int = 0
+}
+
+extension Car: Configurable {}
+```
+
+```swift
+let car = Car().configure {
+  $0.model = "Tesla Model 3"
+  $0.price = 35_000
+}
+
+XCTAssertEqual(car.model, "Tesla Model 3")
+XCTAssertEqual(car.price, 35_000)
 ```
 
 ## Installation

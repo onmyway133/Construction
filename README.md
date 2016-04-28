@@ -8,6 +8,8 @@ The many ways to construct and configure your entity. Work for struct and class
 [![License](https://img.shields.io/cocoapods/l/Construction.svg?style=flat)](http://cocoadocs.org/docsets/Construction)
 [![Platform](https://img.shields.io/cocoapods/p/Construction.svg?style=flat)](http://cocoadocs.org/docsets/Construction)
 
+![](Screenshots/Banner.png)
+
 ## Usage
 
 ### construct
